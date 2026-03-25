@@ -1,4 +1,5 @@
 class Song {
+  final String id;
   final String title;
   final Duration duration;
   final String artistId;
@@ -9,7 +10,8 @@ class Song {
     required this.duration,
     required this.artistId,
     required this.imageUrl,
-});
+    required this.id,
+  });
 
   @override
   String toString() {

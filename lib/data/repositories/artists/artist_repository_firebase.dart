@@ -20,8 +20,9 @@ class ArtistRepositoryFirebase implements ArtistRepository {
       List<Artist> result = [];
 
       for (var iterable in artistJson.entries) {
+        String artistId = iterable.key;
         Map<String, dynamic> values = iterable.value;
-        result.add(ArtistDto.fromJson(values));
+        result.add(ArtistDto.fromJson(artistId ,values));
       }
       
       return result;

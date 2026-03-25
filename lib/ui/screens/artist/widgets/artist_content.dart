@@ -28,7 +28,7 @@ class ArtistContent extends StatelessWidget {
             style: TextStyle(color: Colors.red),
           ),
         );
-
+        break;
       case AsyncValueState.success:
         List<Artist> artists = asyncValue.data!;
         content = ListView.builder(
